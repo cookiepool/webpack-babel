@@ -1,5 +1,3 @@
-import 'core-js';
-import "regenerator-runtime/runtime"
 
 let a = `hello, can you hear me!`;
 
