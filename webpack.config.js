@@ -15,4 +15,19 @@ module.exports = {
         // 文件名
         filename: './[name].js',
     },
+
+    // 加载器
+    module: {
+        rules: [
+            {
+                test: /\.jsx?$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'babel-loader'
+                    }
+                ]
+            }
+        ]
+    }
 }
