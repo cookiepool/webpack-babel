@@ -5,7 +5,7 @@ module.exports = {
     mode: 'none',
     // 入口
     entry: {
-        main: path.resolve(__dirname, './src/index.js')
+        main: path.resolve(__dirname, './index.js')
     },
 
     // 出口
@@ -13,7 +13,7 @@ module.exports = {
         // 出口文件
         path: path.resolve(__dirname, './dist'),
         // 文件名
-        filename: './[name].js',
+        filename: './[name][hash:3].js',
     },
 
     // 加载器
